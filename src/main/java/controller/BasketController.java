@@ -41,7 +41,7 @@ public BasketController (ItemDAO idao, UserService userv,UserDAO udao){
             if(id.equals("0")) {
                 basket.items.clear();
             }else
-                if(id.startsWith("-")){ 
+                if(id.startsWith("-")){
                 basket.items.remove(id.substring(1));
                 }else{
                 basket.items.add(id);
